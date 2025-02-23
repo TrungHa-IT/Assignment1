@@ -1,0 +1,39 @@
+﻿@model Category
+
+<h2>Chỉnh sửa Danh mục</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="CategoryId" />
+
+    <div class="mb-3">
+        <label class="form-label">Tên danh mục</label>
+        <input asp-for="CategoryName" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Mô tả</label>
+        <textarea asp-for="CategoryDesciption" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Danh mục cha</label>
+        <select asp-for="ParentCategoryId" class="form-control">
+            <option value="">Không có</option>
+            @foreach (var parent in ViewBag.ParentCategories as List<Category>)
+            {
+                <option value="@parent.CategoryId">@parent.CategoryName</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Trạng thái</label>
+        <select asp-for="IsActive" class="form-control">
+            <option value="true">Hoạt động</option>
+            <option value="false">Không hoạt động</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+    <a href="@Url.Action("Index", "Category")" class="btn btn-secondary">Quay lại</a>
+</form>

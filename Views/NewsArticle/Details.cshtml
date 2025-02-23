@@ -1,0 +1,11 @@
+﻿@model NewsArticle
+
+<h2>News Details</h2>
+<div>
+    <h4>@Model.NewsTitle</h4>
+    <p><strong>Headline:</strong> @Model.Headline</p>
+    <p><strong>Content:</strong> @Model.NewsContent</p>
+    <p><strong>Created Date:</strong> @Model.CreatedDate?.ToString("yyyy-MM-dd")</p>
+    <a asp-action="Edit" asp-route-id="@Model.NewsArticleId" class="btn btn-warning">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>

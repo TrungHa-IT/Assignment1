@@ -1,0 +1,59 @@
+﻿@model Category
+
+<h2>Chi tiết Danh mục</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID:</th>
+        <td>@Model.CategoryId</td>
+    </tr>
+    <tr>
+        <th>Tên danh mục:</th>
+        <td>@Model.CategoryName</td>
+    </tr>
+    <tr>
+        <th>Mô tả:</th>
+        <td>@Model.CategoryDesciption</td>
+    </tr>
+    <tr>
+        <th>Danh mục cha:</th>
+        <td>@(Model.ParentCategory != null ? Model.ParentCategory.CategoryName : "Không có")</td>
+    </tr>
+    <tr>
+        <th>Trạng thái:</th>
+        <td>@(Model.IsActive == true ? "Hoạt động" : "Không hoạt động")</td>
+    </tr>
+</table>
+
+<h3>Danh mục con:</h3>
+@if (Model.InverseParentCategory.Any())
+{
+    <ul>
+        @foreach (var subCategory in Model.InverseParentCategory)
+        {
+            <li>@subCategory.CategoryName</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Không có danh mục con.</p>
+}
+
+<h3>Bài báo trong danh mục:</h3>
+@if (Model.NewsArticles.Any())
+{
+    <ul>
+        @foreach (var article in Model.NewsArticles)
+        {
+            <li>@article.NewsTitle</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Không có bài báo.</p>
+}
+
+<a href="@Url.Action("Edit", "Category", new { id = Model.CategoryId })" class="btn btn-warning">Chỉnh sửa</a>
+<a href="@Url.Action("Index", "Category")" class="btn btn-secondary">Quay lại</a>

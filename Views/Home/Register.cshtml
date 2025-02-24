@@ -1,0 +1,42 @@
+﻿@using ASS1.ViewModels
+@model RegisterVM
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="row d-flex align-items-center justify-content-center">
+    <div class="col-md-3 card p-3">
+        <h2 class="text-center text-info">Register</h2>
+        <form asp-action="Register" method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="mb-1">
+                <label asp-for="AccountName"></label>
+                <input type="text" asp-for="AccountName" class="form-control" />
+                <span asp-validation-for="AccountName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-1">
+                <label asp-for="AccountEmail"></label>
+                <input type="email" asp-for="AccountEmail" class="form-control" />
+                <span asp-validation-for="AccountEmail" class="text-danger"></span>
+            </div>
+            <div class="mb-1">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="mb-1">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <input type="submit" value="Register" class="btn btn-primary btn-sm float-end" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

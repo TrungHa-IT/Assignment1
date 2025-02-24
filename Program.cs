@@ -1,4 +1,4 @@
-using ASS1.DAO;
+﻿using ASS1.DAO;
 using ASS1.Models;
 using ASS1.Repositories;
 using ASS1.Services;
@@ -19,6 +19,7 @@ builder.Services.AddScoped<ASS1.DAO.NewsArticleDAO>();
 builder.Services.AddScoped<ASS1.Repositories.INewsArticleRepository, ASS1.Repositories.NewsArticleRepository>();
 
 // Register Services
+builder.Services.AddSession(); // Đăng ký dịch vụ Session
 
 builder.Services.AddScoped<ITagDAO, TagDAO>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
@@ -39,6 +40,9 @@ builder.Services.AddScoped<INewsArticleServices, NewsArticleServices>();
 
 var app = builder.Build();
 
+app.UseSession();
+
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -56,6 +60,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Login}/{id?}");
 
 app.Run();

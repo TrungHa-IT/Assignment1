@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\Semester 6\\Assignment\\ASS1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ASS1.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ASS1.e42y6kfo8l.bundle.scp.css"
-    },
-    {
       "Id": "D:\\Semester 6\\Assignment\\ASS1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

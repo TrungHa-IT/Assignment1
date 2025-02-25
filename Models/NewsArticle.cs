@@ -20,7 +20,7 @@ public partial class NewsArticle
     public string? NewsContent { get; set; }
 
     public string? NewsSource { get; set; }
-
+    
     public short? CategoryId { get; set; }
 
     public bool? NewsStatus { get; set; }
@@ -30,7 +30,7 @@ public partial class NewsArticle
     public short? UpdatedById { get; set; }
 
     public DateTime? ModifiedDate { get; set; }
-
+    
     public virtual Category? Category { get; set; }
 
     public virtual SystemAccount? CreatedBy { get; set; }

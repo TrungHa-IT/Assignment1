@@ -1,0 +1,56 @@
+﻿@model ASS1.ViewModels.NewsReportViewModel
+
+@{
+    ViewData["Title"] = "News Report";
+}
+
+<h2 class="text-center mt-4">📊 News Report</h2>
+<a asp-action="Index" asp-controller="Admin">Back</a>
+<div class="container mt-4">
+    <form method="post" asp-action="Dashboard" asp-controller="Admin" class="row g-3">
+        <div class="col-md-4">
+            <label class="form-label fw-bold">Start Date:</label>
+            <input type="date" name="startDate" value="@Model?.StartDate.ToString("yyyy-MM-dd")" class="form-control" required />
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label fw-bold">End Date:</label>
+            <input type="date" name="endDate" value="@Model?.EndDate.ToString("yyyy-MM-dd")" class="form-control" required />
+        </div>
+
+        <div class="col-md-4 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary w-100">📅 Generate Report</button>
+        </div>
+    </form>
+
+    @if (Model?.NewsList != null && Model.NewsList.Any())
+    {
+        <div class="mt-4">
+            <h4 class="text-center">📰 News Report Results</h4>
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="table-dark">
+                    <tr class="text-center">
+                        <th>Title</th>
+                        <th>Content</th>
+                        <th>Created Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var news in Model.NewsList)
+                    {
+                        <tr>
+                            <td>@news.NewsTitle</td>
+                            <td>@news.NewsContent</td>
+                            <td>@news.CreatedDate</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p class="text-center text-muted mt-4">❌ No news found for the selected date range.</p>
+    }
+</div>
+

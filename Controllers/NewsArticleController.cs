@@ -4,7 +4,10 @@ using ASS1.Services;
 using ASS1.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Elfie.Model.Strings;
+using Microsoft.CodeAnalysis.Elfie.Serialization;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace ASS1.Controllers
 {
@@ -13,16 +16,63 @@ namespace ASS1.Controllers
         private readonly INewsArticleServices _newsArticleServices;
         private readonly ICategoryServices _categoryServices;
         private readonly ITagServices _tagServices;
-        public NewsArticleController(INewsArticleServices newsArticleServices, ICategoryServices categoryServices, ITagServices tagServices)
+        private readonly EmailService _emailService;
+        
+        public NewsArticleController(INewsArticleServices newsArticleServices, ICategoryServices categoryServices, ITagServices tagServices, EmailService emailService)
         {
             _newsArticleServices = newsArticleServices;
             _categoryServices = categoryServices;
             _tagServices = tagServices;
+            _emailService = emailService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-            var articles = await _newsArticleServices.GetAllNews();
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewData["CurrentFilter"] = searchString;
+
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            var articles = await _newsArticleServices.GetAllNews(); 
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                articles = articles.Where(s => s.NewsTitle.Contains(searchString)
+                                       || s.NewsContent.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "Date":
+                    articles = articles.OrderBy(s => s.CreatedDate);
+                    break;
+                case "status":
+                    articles = articles.OrderByDescending(s => s.ModifiedDate);
+                    break;
+                default:
+                    
+                    break;
+            }
+            int pageSize = 8;
+            return View(await PaginatedList<NewsArticle>.CreateAsync(articles, pageNumber ?? 1, pageSize));
+
+        }
+
+        public async Task<IActionResult> Lecturer()
+        {
+            var articles = await _newsArticleServices.GetAllNewsStatus();
             return View(articles);
+        }
+        public async Task<IActionResult> LecturerDetails(string id)
+        {
+            var category = await _newsArticleServices.GetNewsById(id);
+            return View(category);
         }
 
         public async Task<IActionResult> Details(string id)
@@ -41,39 +91,75 @@ namespace ASS1.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var tags = await _tagServices.GetAllTags(); // Đợi dữ liệu trả về
+            var tags = await _tagServices.GetAllTags();
             var categories = await _categoryServices.GetAllCategories();
 
             var model = new NewsArticleViewModel
             {
-                Categories = categories.ToList(), // Chuyển về List<Category>
-                Tags = tags.ToList() // Chuyển về List<Tag>
+                Categories = categories.ToList(), 
+                Tags = tags.ToList() 
             };
 
             return View(model);
         }
 
+        public string GetRandomArticleID()
+        {
+            return "SA" + new Random().Next(10, 9999);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create(NewsArticleViewModel model)
         {
-           
+            if(!ModelState.IsValid)
+            {
+                var tags = await _tagServices.GetAllTags(); 
+                var categories = await _categoryServices.GetAllCategories();
 
-            // Tạo đối tượng NewsArticle
+                var modelvm = new NewsArticleViewModel
+                {
+                    Categories = categories.ToList(), 
+                    Tags = tags.ToList() 
+                };
+
+                return View(modelvm);
+            }
+
+            var userName = User.FindFirst(ClaimTypes.Name)?.Value;
+            var userIDString = User.FindFirst("AccountId")?.Value;
+
+            
+            short? userID = null;
+            if (short.TryParse(userIDString, out short parsedUserID))
+            {
+                userID = parsedUserID;
+            }
+
+            string NewsArticleIdString = GetRandomArticleID();
+
             var newsArticle = new NewsArticle
             {
-                NewsArticleId = "SA1",
+                NewsArticleId = NewsArticleIdString,
                 NewsTitle = model.NewsTitle?.Trim() ?? "Untitled",
                 Headline = model.Headline?.Trim() ?? "No Headline",
-                CreatedDate = DateTime.UtcNow, // Sử dụng UTC để đồng bộ thời gian
-                NewsContent = model.NewsContent?.Trim() ?? "",
+                CreatedDate = DateTime.UtcNow,
+                NewsContent = model.Headline?.Trim() ?? "No New Content",
                 CategoryId = (short)(model.SelectedTagCategoryID ?? 0),
                 ModifiedDate = DateTime.UtcNow,
-                CreatedById = 1,
-                UpdatedById = 1,
+                CreatedById = userID ?? 0, 
+                UpdatedById = userID ?? 0,
+                NewsStatus = true,
+                NewsSource = "N/A"
             };
 
-            // Gọi service để thêm bài viết kèm Tags
             await _newsArticleServices.AddNewsArticleWithTagsAsync(newsArticle, model.SelectedTagIds ?? new List<int>());
+
+            string adminEmail = "trunghhhe176079@fpt.edu.vn";
+            string subject = "New Article Published";
+            string id = model.NewsArticleId;
+            string body = $"<h3>{model.NewsTitle}</h3><p>By {userName}</p><a href='http://localhost:5019/NewsArticle/Details/{NewsArticleIdString}'>View Article</a>";
+
+            await _emailService.SendEmailAsync(adminEmail, subject, body);
 
             return RedirectToAction("Index");
         }
@@ -81,34 +167,84 @@ namespace ASS1.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
-            var article = await _newsArticleServices.GetNewsById(id);
-            if (article == null)
+            var articleResult = await _newsArticleServices.GetNewsById(id);
+            var tags = await _tagServices.GetAllTags();
+            var categories = await _categoryServices.GetAllCategories();
+
+            var model = new NewsArticleViewModel
             {
-                return NotFound();
-            }
+                NewsArticleId = articleResult.NewsArticleId,
+                NewsTitle = articleResult.NewsTitle,
+                Headline = articleResult.Headline,
+                NewsContent = articleResult.NewsContent,
+                NewsSource = articleResult.NewsSource,
+                NewsStatus = articleResult.NewsStatus,
 
-            ViewBag.Categories = new SelectList(await _categoryServices.GetAllCategories(), "CategoryId", "CategoryName");
-            ViewBag.Tags = new MultiSelectList(await _tagServices.GetAllTags(), "TagId", "TagName", article.Tags.Select(t => t.TagId));
+                Categories = categories.ToList(),
+                Tags = tags.ToList(),
 
-            return View(article);
+                SelectedTagCategoryID = articleResult.Category?.CategoryId,  
+                SelectedTagIds = articleResult.Tags?.Select(t => t.TagId).ToList() ?? new List<int>() 
+            };
+
+            return View(model);
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(NewsArticle model, List<int> selectedTags)
+        public async Task<IActionResult> Edit(NewsArticleViewModel newsArticleViewModel, string id)
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Categories = new SelectList(await _categoryServices.GetAllCategories(), "CategoryId", "CategoryName");
-                //ViewBag.Tags = new MultiSelectList(await _tagServices.GetAllTags(), "TagId", "TagName", article.Tags.Select(t => t.TagId));
+                var articleResult = await _newsArticleServices.GetNewsById(id);
+                var tags = await _tagServices.GetAllTags();
+                var categories = await _categoryServices.GetAllCategories();
+
+                var model = new NewsArticleViewModel
+                {
+                    NewsArticleId = articleResult.NewsArticleId,
+                    NewsTitle = articleResult.NewsTitle,
+                    Headline = articleResult.Headline,
+                    NewsContent = articleResult.NewsContent,
+                    NewsSource = articleResult.NewsSource,
+                    NewsStatus = articleResult.NewsStatus,
+
+                    Categories = categories.ToList(),
+                    Tags = tags.ToList(),
+
+                    SelectedTagCategoryID = articleResult.Category?.CategoryId,  
+                    SelectedTagIds = articleResult.Tags?.Select(t => t.TagId).ToList() ?? new List<int>() 
+                };
 
                 return View(model);
             }
 
-            await _newsArticleServices.UpdateNews(model);
-            return RedirectToAction("Index");
-        }
+            var userIDString = User.FindFirst("AccountId")?.Value;
+            short? userID = null;
+            if (short.TryParse(userIDString, out short parsedUserID))
+            {
+                userID = parsedUserID;
+            }
+            var existingArticle = await _newsArticleServices.GetNewsById(id);
+            if (existingArticle == null)
+            {
+                return NotFound();
+            }
 
+            existingArticle.NewsTitle = newsArticleViewModel.NewsTitle;
+            existingArticle.Headline = newsArticleViewModel.Headline;
+            existingArticle.NewsContent = newsArticleViewModel.NewsContent;
+            existingArticle.CategoryId = (short)(newsArticleViewModel.SelectedTagCategoryID ?? 0);
+            existingArticle.NewsStatus = newsArticleViewModel.NewsStatus;
+            existingArticle.NewsSource = newsArticleViewModel.NewsSource;
+            existingArticle.UpdatedById = userID;
+            existingArticle.ModifiedDate = DateTime.UtcNow;
+
+            await _newsArticleServices.UpdateNewsArticleWithTagsAsync(existingArticle, newsArticleViewModel.SelectedTagIds ?? new List<int>());
+            return RedirectToAction("Index");
+
+        }
 
     }
 }

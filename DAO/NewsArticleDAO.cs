@@ -14,9 +14,9 @@ namespace ASS1.DAO
             _context = context;
         }
 
-        public async Task<IEnumerable<NewsArticle>> GetAllNews()
+        public async Task<IQueryable<NewsArticle>> GetAllNews()
         {
-            return await _context.NewsArticles.Include(t => t.Tags).ToListAsync();
+            return _context.NewsArticles.Include(t => t.Tags);
         }
 
         public async Task<NewsArticle?> GetNewsById(string newsArticleId)
@@ -47,5 +47,21 @@ namespace ASS1.DAO
                 await _context.SaveChangesAsync();
             }
         }
+
+        public async Task<IEnumerable<NewsArticle>> GetAllNewsStatus()
+        {
+            return await _context.NewsArticles
+                     .Where(n => n.NewsStatus == true)
+                     .ToListAsync();
+        }
+
+        public async Task<IEnumerable<NewsArticle>> GetNewsByDateRange(DateTime startDate, DateTime endDate)
+        {
+            return await _context.NewsArticles
+            .Where(n => n.CreatedDate >= startDate && n.CreatedDate <= endDate)
+            .OrderByDescending(n => n.CreatedDate)
+            .ToListAsync();
+        }
     }
 }
+

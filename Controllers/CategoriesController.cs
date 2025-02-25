@@ -25,6 +25,12 @@ namespace ASS1.Controllers
             return View(await funewsManagementContext.ToListAsync());
         }
 
+        public async Task<IActionResult> Lecturer()
+        {
+            var funewsManagementContext = _context.Categories.Include(c => c.ParentCategory);
+            return View(await funewsManagementContext.ToListAsync());
+        }
+
         // GET: Categories/Details/5
         public async Task<IActionResult> Details(short? id)
         {

@@ -2,6 +2,7 @@
 using ASS1.Models;
 using ASS1.Repositories;
 using ASS1.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,15 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<FunewsManagementContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("HotelDb")));
 
+// Cấu hình xác thực bằng Cookie
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login"; // Trang đăng nhập
+        options.AccessDeniedPath = "/Account/AccessDenied"; // Trang từ chối quyền
+    });
+
+
 // Register DAO first
 builder.Services.AddScoped<ASS1.DAO.NewsArticleDAO>();
 
@@ -20,7 +30,7 @@ builder.Services.AddScoped<ASS1.Repositories.INewsArticleRepository, ASS1.Reposi
 
 // Register Services
 builder.Services.AddSession(); // Đăng ký dịch vụ Session
-
+builder.Services.AddSingleton<EmailService>();
 builder.Services.AddScoped<ITagDAO, TagDAO>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<ITagServices, TagServices>();

@@ -4,6 +4,9 @@ using ASS1.Models;
 using ASS1.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 namespace ASS1.Controllers;
 
@@ -39,32 +42,58 @@ public class HomeController : Controller
 
         // Tìm người dùng theo email
         var user = await _funewsManagementContext.SystemAccounts
-     .FirstOrDefaultAsync(u => u.AccountEmail == loginVM.AccountEmail);
+            .FirstOrDefaultAsync(u => u.AccountEmail == loginVM.AccountEmail);
 
-
+        // Kiểm tra tài khoản và mật khẩu
         if (user == null || user.AccountPassword != loginVM.AccountPassword)
         {
             ModelState.AddModelError("", "Email hoặc mật khẩu không đúng.");
             return View(loginVM);
         }
 
-        // Lưu thông tin vào Session (hoặc Cookie)
-        HttpContext.Session.SetString("UserEmail", user.AccountEmail);
-        if (user.AccountRole == 2)
+        // Chuyển AccountRole từ số sang tên vai trò (ví dụ: 1 -> "Staff", 2 -> "Lecturer", 3 -> "Admin")
+        string userRole = user.AccountRole switch
         {
-            return RedirectToAction("Index", "Tags");
-        }
-        else if (user.AccountRole == 1)
+            1 => "Staff",
+            2 => "Lecturer",
+            3 => "Admin",
+            _ => "User" // Nếu không có role nào phù hợp
+        };
+
+        // Tạo danh sách claims từ thông tin tài khoản
+        var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.Name, user.AccountName ?? ""),
+        new Claim(ClaimTypes.Email, user.AccountEmail ?? ""),
+        new Claim(ClaimTypes.Role, userRole), // Lưu role dưới dạng chuỗi (Staff, Lecturer, Admin)
+        new Claim("AccountId", user.AccountId.ToString())
+    };
+
+        // Tạo danh tính claims
+        var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
+        // Đăng nhập với cookie
+        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal);
+
+        // Điều hướng người dùng dựa trên claim role
+        if (User.IsInRole("Lecturer"))
         {
-            return RedirectToAction("Index", "NewsArticle");
+            return RedirectToAction("Lecturer", "NewsArticle");
         }
-        else if(user.AccountRole == 3)
+        if (User.IsInRole("Staff"))
         {
-            return RedirectToAction("Index", "Category");
+            return RedirectToAction("Index", "Staff");
         }
-            // Chuyển hướng đến trang chính sau khi đăng nhập
+        if (User.IsInRole("Admin"))
+        {
+            return RedirectToAction("Index", "Admin");
+        }
+
+        // Trường hợp mặc định
         return RedirectToAction("Login", "Home");
     }
+
 
     public IActionResult Register()
     {

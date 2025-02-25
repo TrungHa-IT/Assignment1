@@ -19,7 +19,6 @@ namespace ASS1.Repositories
 
         public async Task AddNewsArticleWithTagsAsync(NewsArticle article, List<int> tagIds)
         {
-            // Lấy danh sách tag từ database
             var tags = new List<Tag>();
             foreach (var tagId in tagIds)
             {
@@ -30,21 +29,40 @@ namespace ASS1.Repositories
                 }
             }
 
-            // Gán danh sách Tags cho bài viết
             article.Tags = tags;
 
-            // Thêm vào database (EF Core tự chèn vào bảng trung gian)
             await _newsArticleDAO.AddNews(article);
         }
 
         public async Task DeleteNews(string newsArticleId)
         {
+            var article = await _newsArticleDAO.GetNewsById(newsArticleId);
+            var listTags = new List<Tag>();
+            listTags = _tagDAO.GetAllTags().Result.ToList();
+
+            foreach (var tag in listTags)
+            {
+                if (article.Tags.Contains(tag))
+                {
+                    article.Tags.Remove(tag);
+                }
+            }
             await _newsArticleDAO.DeleteNews(newsArticleId);
         }
 
-        public async Task<IEnumerable<NewsArticle>> GetAllNews()
+        public async Task<IQueryable<NewsArticle>> GetAllNews()
         {
             return await _newsArticleDAO.GetAllNews();
+        }
+
+        public async Task<IEnumerable<NewsArticle>> GetAllNewsStatus()
+        {
+            return await _newsArticleDAO.GetAllNewsStatus();
+        }
+
+        public async Task<IEnumerable<NewsArticle>> GetNewsByDateRange(DateTime startDate, DateTime endDate)
+        {
+            return await _newsArticleDAO.GetNewsByDateRange(startDate, endDate);
         }
 
         public async Task<NewsArticle?> GetNewsById(string newsArticleId)
@@ -56,5 +74,43 @@ namespace ASS1.Repositories
         {
             await _newsArticleDAO.UpdateNews(newsArticle);
         }
+
+        public async Task UpdateNewsArticleWithTagsAsync(NewsArticle article, List<int> tagIds)
+        {
+            var tags = new List<Tag>();
+            foreach (var tagId in tagIds)
+            {
+                var tag = await _tagDAO.GetTagById(tagId);
+                if (tag != null)
+                {
+                    tags.Add(tag);
+                }
+            }
+
+            var listTags = new List<Tag>();
+            listTags = _tagDAO.GetAllTags().Result.ToList();
+
+            foreach (var tag in listTags)
+            {
+                if (article.Tags.Contains(tag))
+                {
+                    article.Tags.Remove(tag);
+                }
+            }
+
+            // Thêm các tag mới vào bài viết nếu chưa có
+            foreach (var tag in tags)
+            {
+                if (!article.Tags.Contains(tag))
+                {
+                    article.Tags.Add(tag);
+                }
+            }
+
+            // Cập nhật bài viết
+            await _newsArticleDAO.UpdateNews(article);
+        }
+
+
     }
 }

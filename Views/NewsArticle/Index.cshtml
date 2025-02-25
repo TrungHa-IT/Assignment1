@@ -1,9 +1,21 @@
-﻿@model IEnumerable<NewsArticle>
+﻿@model PaginatedList<ASS1.Models.NewsArticle>
+
 
 <h2>News Articles</h2>
 <p>
     <a asp-action="Create" class="btn btn-primary">Create New</a>
 </p>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            <label>Find by Title: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" /></label>
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>
@@ -23,9 +35,34 @@
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.NewsArticleId" class="btn btn-warning">Edit</a>
                     <a asp-action="Details" asp-route-id="@item.NewsArticleId" class="btn btn-info">Details</a>
-                    <a asp-action="Delete" asp-route-id="@item.NewsArticleId" class="btn btn-danger">Delete</a>
+                    <a asp-action="Delete" asp-route-id="@item.NewsArticleId"
+                       class="btn btn-danger"
+                       onclick="return confirm('Are you sure you want to delete this article?');">
+                        Delete
+                    </a>
+
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @prevDisabled">
+    Previous
+</a>
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @nextDisabled">
+    Next
+</a>

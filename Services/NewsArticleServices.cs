@@ -11,9 +11,9 @@ public class NewsArticleServices : INewsArticleServices
         _newsArticleRepository = newsArticleRepository;
     }
 
-    public async Task<IEnumerable<NewsArticle>> GetAllNews()
+    public  Task<IQueryable<NewsArticle>> GetAllNews()
     {
-        return await _newsArticleRepository.GetAllNews();
+        return _newsArticleRepository.GetAllNews();
     }
 
     public async Task<NewsArticle?> GetNewsById(string newsArticleId)
@@ -38,10 +38,22 @@ public class NewsArticleServices : INewsArticleServices
 
     public async Task AddNewsArticleWithTagsAsync(NewsArticle article, List<int> tagIds)
     {
-        // Kiểm tra danh sách tagIds có null không
         tagIds ??= new List<int>();
-
-        // Gọi repository để thêm bài viết với danh sách tagIds
         await _newsArticleRepository.AddNewsArticleWithTagsAsync(article, tagIds);
+    }
+
+    public async Task<IEnumerable<NewsArticle>> GetAllNewsStatus()
+    {
+        return await _newsArticleRepository.GetAllNewsStatus();
+    }
+
+    public async Task<IEnumerable<NewsArticle>> GetNewsByDateRange(DateTime startDate, DateTime endDate)
+    {
+        return await _newsArticleRepository.GetNewsByDateRange(startDate, endDate); 
+    }
+
+    public async Task UpdateNewsArticleWithTagsAsync(NewsArticle article, List<int> tagIds)
+    {
+        await _newsArticleRepository.UpdateNewsArticleWithTagsAsync(article, tagIds);
     }
 }

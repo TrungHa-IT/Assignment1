@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASS1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASS1.Controllers
 {
@@ -17,13 +18,13 @@ namespace ASS1.Controllers
         {
             _context = context;
         }
-
+        [Authorize(Roles = "Admin,Staff")]
         // GET: SystemAccounts
         public async Task<IActionResult> Index()
         {
             return View(await _context.SystemAccounts.ToListAsync());
         }
-
+        [Authorize(Roles = "Admin,Staff")]
         [HttpGet]
         [Route("SystemAccounts/ChangeStatus/{accountID}")]
         public async Task<IActionResult> ChangeStatus(short accountID)
@@ -42,8 +43,32 @@ namespace ASS1.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "Admin,Staff")]
+        [HttpGet]
+        [Route("SystemAccounts/ChangeRole/{accountID}")]
+        public async Task<IActionResult> ChangeRole(short accountID)
+        {
+            var systemAccount = await _context.SystemAccounts.FindAsync(accountID);
 
+            if (systemAccount == null)
+            {
+                return NotFound();
+            }
 
+            if(systemAccount.AccountRole == 1)
+            {
+                systemAccount.AccountRole = 2;
+            }
+            else if (systemAccount.AccountRole == 2)
+            {
+                systemAccount.AccountRole = 1;
+            }
+            _context.Update(systemAccount);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+        [Authorize(Roles = "Admin,Staff")]
         // GET: SystemAccounts/Details/5
         public async Task<IActionResult> Details(short? id)
         {
@@ -83,6 +108,7 @@ namespace ASS1.Controllers
             }
             return View(systemAccount);
         }
+        [Authorize(Roles = "Admin,Staff")]
 
         // GET: SystemAccounts/Edit/5
         public async Task<IActionResult> Edit(short? id)
@@ -99,10 +125,8 @@ namespace ASS1.Controllers
             }
             return View(systemAccount);
         }
+        [Authorize(Roles = "Admin,Staff")]
 
-        // POST: SystemAccounts/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(short id, [Bind("AccountId,AccountName,AccountEmail,AccountPassword")] SystemAccount systemAccount)
@@ -116,7 +140,19 @@ namespace ASS1.Controllers
             {
                 try
                 {
-                    _context.Update(systemAccount);
+                    // Lấy dữ liệu cũ từ database
+                    var existingAccount = await _context.SystemAccounts.FindAsync(id);
+                    if (existingAccount == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Giữ nguyên Role cũ, chỉ cập nhật các trường được phép
+                    existingAccount.AccountName = systemAccount.AccountName;
+                    existingAccount.AccountEmail = systemAccount.AccountEmail;
+                    existingAccount.AccountPassword = systemAccount.AccountPassword;
+
+                    _context.Update(existingAccount);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -130,11 +166,14 @@ namespace ASS1.Controllers
                         throw;
                     }
                 }
-                // Chuyển hướng đến action "Profile" của controller "Staff" sau khi cập nhật thành công
+
+                // Chuyển hướng đến action "Profile" của controller "Staff"
                 return RedirectToAction("Profile", "Staff", new { id = systemAccount.AccountId });
             }
+
             return View(systemAccount);
         }
+
 
 
         // GET: SystemAccounts/Delete/5

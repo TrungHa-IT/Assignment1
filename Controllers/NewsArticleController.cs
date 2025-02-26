@@ -72,14 +72,14 @@ namespace ASS1.Controllers
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                pageNumber = 1;  // Reset về trang đầu tiên nếu có tìm kiếm mới
+                pageNumber = 1;  
             }
             else
             {
                 searchString = currentFilter;
             }
 
-            ViewData["CurrentFilter"] = searchString; // Lưu trạng thái tìm kiếm khi chuyển trang
+            ViewData["CurrentFilter"] = searchString; 
 
             var articles = (await _newsArticleServices.GetAllNewsStatus()).AsQueryable();
 
@@ -100,7 +100,7 @@ namespace ASS1.Controllers
                     articles = articles.OrderByDescending(s => s.ModifiedDate);
                     break;
                 default:
-                    articles = articles.OrderByDescending(s => s.CreatedDate); // Sắp xếp mặc định
+                    articles = articles.OrderByDescending(s => s.CreatedDate); 
                     break;
             }
 

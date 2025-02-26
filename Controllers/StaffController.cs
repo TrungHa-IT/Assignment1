@@ -1,4 +1,5 @@
 ﻿using ASS1.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,11 +14,12 @@ namespace ASS1.Controllers
             _newsArticleServices = newsArticleServices;
             _systemAccountServices = systemAccountServices;
         }
+        [Authorize(Roles = "Staff")]
         public IActionResult Index()
         {
             return View();
         }
-
+        [Authorize (Roles ="Staff")]
         public async Task<IActionResult> History()
         {
             var userIDString = User.FindFirst("AccountId")?.Value;
@@ -31,7 +33,7 @@ namespace ASS1.Controllers
             var news = await _newsArticleServices.GetNewsByAccountID(userID ?? 0); // ✅ Add await
             return View(news); // ✅ Convert to List
         }
-
+        [Authorize(Roles = "Staff")]
         public async Task<IActionResult> Profile()
         {
             var userIDString = User.FindFirst("AccountId")?.Value;

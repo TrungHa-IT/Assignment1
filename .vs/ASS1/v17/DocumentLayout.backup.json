@@ -3,64 +3,127 @@
   "WorkspaceRootPath": "D:\\Semester 6\\Assignment\\ASS1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\staff\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\staff\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\staff\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\staff\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\systemaccounts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\systemaccounts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\systemaccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\systemaccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\systemaccounts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\systemaccounts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\newsarticlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\newsarticlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\systemaccounts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\systemaccounts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\lecturerdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\lecturerdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\viewmodels\\newsreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:viewmodels\\newsreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\newsarticlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\newsarticlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\systemaccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\systemaccountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\staff\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\staff\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\lecturer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\lecturer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\lecturerdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\lecturerdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hatru\\Documents\\Zalo Received Files\\game_ban_may_bay_khong_gian\\game_ban_may_bay_khong_gian\\Library\\PackageCache\\com.unity.ugui\\PackageConversionData.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\systemaccounts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\systemaccounts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\systemaccounts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\systemaccounts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\systemaccounts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\systemaccounts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\staff\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\staff\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\viewmodels\\newsreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:viewmodels\\newsreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -71,32 +134,8 @@
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\repositories\\inewsarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:repositories\\inewsarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\lecturer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\lecturer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\dao\\systemaccountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,10 +166,6 @@
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:dao\\inewsarticledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\systemaccounts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\systemaccounts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -149,18 +184,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\models\\newsarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:models\\newsarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021210_UpdateAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250226021210_UpdateAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021112_UpdateModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250226021112_UpdateModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226020926_UpdateModel1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -187,16 +210,8 @@
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:dao\\isystemaccountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\staff\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\staff\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\services\\systemaccountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:services\\systemaccountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\newsarticle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\newsarticle\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\viewmodels\\newsarticlevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -209,18 +224,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\models\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:models\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\services\\categoryservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -259,14 +262,6 @@
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:dao\\itagdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -295,6 +290,14 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Intern .net\\ASP .NET MVC\\ChamCong\\ViewModels\\LoginVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\migrations\\20250226021112_updatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:migrations\\20250226021112_updatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|d:\\semester 6\\assignment\\ass1\\migrations\\20250226021210_updateaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A986ADDC-77A5-4723-97D4-E2BF3EEB613A}|ASS1.csproj|solutionrelative:migrations\\20250226021210_updateaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -304,214 +307,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\SystemAccounts\\Details.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Details.cshtml",
-              "RelativeToolTip": "Views\\SystemAccounts\\Details.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T03:54:00.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Categories\\Create.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Create.cshtml",
-              "RelativeToolTip": "Views\\Categories\\Create.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T02:18:52.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Lecturer.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Lecturer.cshtml",
-              "RelativeDocumentMoniker": "Views\\NewsArticle\\Lecturer.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Lecturer.cshtml",
-              "RelativeToolTip": "Views\\NewsArticle\\Lecturer.cshtml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T08:11:43.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\Profile.cshtml",
-              "RelativeDocumentMoniker": "Views\\Staff\\Profile.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\Profile.cshtml",
-              "RelativeToolTip": "Views\\Staff\\Profile.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T18:02:49.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SystemAccountsController.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\SystemAccountsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SystemAccountsController.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\SystemAccountsController.cs",
-              "RelativeToolTip": "Controllers\\SystemAccountsController.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAswG4AAAANAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "TagsController.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\TagsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TagsController.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\TagsController.cs",
+              "RelativeToolTip": "Controllers\\TagsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwGIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T17:36:58.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NewsArticleController.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\NewsArticleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NewsArticleController.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\NewsArticleController.cs",
-              "RelativeToolTip": "Controllers\\NewsArticleController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAuwFoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T17:35:40.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StaffController.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\StaffController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StaffController.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\StaffController.cs",
-              "RelativeToolTip": "Controllers\\StaffController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAwwC8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T13:17:55.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Staff\\Index.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\Index.cshtml",
-              "RelativeToolTip": "Views\\Staff\\Index.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADwAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T13:18:11.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\SystemAccounts\\Edit.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Edit.cshtml",
-              "RelativeToolTip": "Views\\SystemAccounts\\Edit.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T02:04:19.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\SystemAccounts\\Index.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Index.cshtml",
-              "RelativeToolTip": "Views\\SystemAccounts\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T08:50:25.716Z",
+              "WhenOpened": "2025-02-23T17:36:15.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "LecturerDetails.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\LecturerDetails.cshtml",
-              "RelativeDocumentMoniker": "Views\\NewsArticle\\LecturerDetails.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\LecturerDetails.cshtml",
-              "RelativeToolTip": "Views\\NewsArticle\\LecturerDetails.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T08:26:20.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Categories\\Edit.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Categories\\Edit.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T03:21:04.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NewsReportViewModel.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\ViewModels\\NewsReportViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\NewsReportViewModel.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\ViewModels\\NewsReportViewModel.cs",
-              "RelativeToolTip": "ViewModels\\NewsReportViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAYwKoAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T09:23:09.35Z",
+              "WhenOpened": "2025-02-24T03:21:51.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAqwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T08:35:27.747Z",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAwwBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T17:37:32.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAjwEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T02:20:02.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "NewsArticleController.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\NewsArticleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NewsArticleController.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\NewsArticleController.cs",
+              "RelativeToolTip": "Controllers\\NewsArticleController.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAYwLsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T17:35:40.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\NewsArticle\\Index.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Index.cshtml",
+              "RelativeToolTip": "Views\\NewsArticle\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T08:47:45.614Z",
+              "WhenOpened": "2025-02-24T08:12:04.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StaffController.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "Controllers\\StaffController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T13:17:55.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T02:16:58.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T08:35:27.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\Index.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\Index.cshtml",
+              "RelativeToolTip": "Views\\Staff\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T13:18:11.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SystemAccountsController.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\SystemAccountsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SystemAccountsController.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\SystemAccountsController.cs",
+              "RelativeToolTip": "Controllers\\SystemAccountsController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T17:36:58.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T14:44:08.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T08:35:11.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\History.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\History.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\History.cshtml",
+              "RelativeToolTip": "Views\\Staff\\History.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T17:48:37.759Z",
               "EditorCaption": ""
             },
             {
@@ -529,306 +506,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\NewsArticle\\Details.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Details.cshtml",
-              "RelativeToolTip": "Views\\NewsArticle\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T08:14:23.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Categories\\Details.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Details.cshtml",
-              "RelativeToolTip": "Views\\Categories\\Details.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T03:19:42.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Categories\\Index.cshtml",
               "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Index.cshtml",
               "RelativeToolTip": "Views\\Categories\\Index.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAB0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-26T03:21:05.409Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\NewsArticle\\Edit.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Edit.cshtml",
-              "RelativeToolTip": "Views\\NewsArticle\\Edit.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T08:14:22.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "NewsArticleDAO.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\NewsArticleDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\NewsArticleDAO.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\NewsArticleDAO.cs",
-              "RelativeToolTip": "DAO\\NewsArticleDAO.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAADwvzcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T08:16:29.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\NewsArticle\\Index.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Index.cshtml",
-              "RelativeToolTip": "Views\\NewsArticle\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T08:12:04.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "INewsArticleRepository.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\INewsArticleRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\INewsArticleRepository.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\INewsArticleRepository.cs",
-              "RelativeToolTip": "Repositories\\INewsArticleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T08:18:30.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAkwJkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:21:51.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "SystemAccountDAO.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\SystemAccountDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\SystemAccountDAO.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\SystemAccountDAO.cs",
-              "RelativeToolTip": "DAO\\SystemAccountDAO.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwB4AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T10:15:10.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "NewsArticleServices.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\NewsArticleServices.cs",
-              "RelativeDocumentMoniker": "Services\\NewsArticleServices.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Services\\NewsArticleServices.cs",
-              "RelativeToolTip": "Services\\NewsArticleServices.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA0wCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T08:19:35.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "INewsArticleServices.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\INewsArticleServices.cs",
-              "RelativeDocumentMoniker": "Services\\INewsArticleServices.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Services\\INewsArticleServices.cs",
-              "RelativeToolTip": "Services\\INewsArticleServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T08:19:23.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ICategoryServices.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\ICategoryServices.cs",
-              "RelativeDocumentMoniker": "Services\\ICategoryServices.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Services\\ICategoryServices.cs",
-              "RelativeToolTip": "Services\\ICategoryServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T17:42:18.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "NewsArticleRepository.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\NewsArticleRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\NewsArticleRepository.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\NewsArticleRepository.cs",
-              "RelativeToolTip": "Repositories\\NewsArticleRepository.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAwwDwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T08:18:44.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "INewsArticleDAO.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\INewsArticleDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\INewsArticleDAO.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\INewsArticleDAO.cs",
-              "RelativeToolTip": "DAO\\INewsArticleDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:25:03.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwDwAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T17:37:32.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "SystemAccount.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Models\\SystemAccount.cs",
-              "RelativeDocumentMoniker": "Models\\SystemAccount.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Models\\SystemAccount.cs",
-              "RelativeToolTip": "Models\\SystemAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:01:46.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "20250226020926_UpdateModel1.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226020926_UpdateModel1.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250226020926_UpdateModel1.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226020926_UpdateModel1.cs",
-              "RelativeToolTip": "Migrations\\20250226020926_UpdateModel1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T02:09:27.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\SystemAccounts\\Create.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Create.cshtml",
-              "RelativeToolTip": "Views\\SystemAccounts\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T09:17:20.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "FunewsManagementContext.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Data\\FunewsManagementContext.cs",
-              "RelativeDocumentMoniker": "Data\\FunewsManagementContext.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Data\\FunewsManagementContext.cs",
-              "RelativeToolTip": "Data\\FunewsManagementContext.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAAwHAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T02:17:34.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "NewsArticle.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Models\\NewsArticle.cs",
-              "RelativeDocumentMoniker": "Models\\NewsArticle.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Models\\NewsArticle.cs",
-              "RelativeToolTip": "Models\\NewsArticle.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T08:23:20.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "FunewsManagementContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\FunewsManagementContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\FunewsManagementContextModelSnapshot.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\FunewsManagementContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\FunewsManagementContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T03:07:46.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "20250226021112_UpdateModel.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021112_UpdateModel.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250226021112_UpdateModel.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021112_UpdateModel.cs",
-              "RelativeToolTip": "Migrations\\20250226021112_UpdateModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T02:11:13.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "20250226021210_UpdateAccount.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021210_UpdateAccount.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250226021210_UpdateAccount.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021210_UpdateAccount.cs",
-              "RelativeToolTip": "Migrations\\20250226021210_UpdateAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T02:12:10.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -841,7 +532,401 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Create.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T02:18:52.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LecturerDetails.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\LecturerDetails.cshtml",
+              "RelativeDocumentMoniker": "Views\\NewsArticle\\LecturerDetails.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\LecturerDetails.cshtml",
+              "RelativeToolTip": "Views\\NewsArticle\\LecturerDetails.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T08:26:20.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Services\\EmailService.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Services\\EmailService.cs",
+              "RelativeToolTip": "Services\\EmailService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBYAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T13:41:49.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\NewsArticle\\Create.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Create.cshtml",
+              "RelativeToolTip": "Views\\NewsArticle\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T08:14:23.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Lecturer.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Lecturer.cshtml",
+              "RelativeDocumentMoniker": "Views\\NewsArticle\\Lecturer.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Lecturer.cshtml",
+              "RelativeToolTip": "Views\\NewsArticle\\Lecturer.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T08:11:43.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PackageConversionData.json",
+              "DocumentMoniker": "C:\\Users\\hatru\\Documents\\Zalo Received Files\\game_ban_may_bay_khong_gian\\game_ban_may_bay_khong_gian\\Library\\PackageCache\\com.unity.ugui\\PackageConversionData.json",
+              "ToolTip": "C:\\Users\\hatru\\Documents\\Zalo Received Files\\game_ban_may_bay_khong_gian\\game_ban_may_bay_khong_gian\\Library\\PackageCache\\com.unity.ugui\\PackageConversionData.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-26T06:55:26.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\SystemAccounts\\Index.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Index.cshtml",
+              "RelativeToolTip": "Views\\SystemAccounts\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T08:50:25.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\SystemAccounts\\Edit.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Edit.cshtml",
+              "RelativeToolTip": "Views\\SystemAccounts\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T02:04:19.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\SystemAccounts\\Details.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Details.cshtml",
+              "RelativeToolTip": "Views\\SystemAccounts\\Details.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T03:54:00.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\NewsArticle\\Details.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Details.cshtml",
+              "RelativeToolTip": "Views\\NewsArticle\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T08:14:23.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\NewsArticle\\Edit.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Edit.cshtml",
+              "RelativeToolTip": "Views\\NewsArticle\\Edit.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T08:14:22.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\Profile.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Staff\\Profile.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T18:02:49.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Edit.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAA0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T03:21:04.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "NewsReportViewModel.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\ViewModels\\NewsReportViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\NewsReportViewModel.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\ViewModels\\NewsReportViewModel.cs",
+              "RelativeToolTip": "ViewModels\\NewsReportViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T09:23:09.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T08:47:45.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categories\\Details.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Categories\\Details.cshtml",
+              "RelativeToolTip": "Views\\Categories\\Details.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-26T03:19:42.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "NewsArticleDAO.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\NewsArticleDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\NewsArticleDAO.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\NewsArticleDAO.cs",
+              "RelativeToolTip": "DAO\\NewsArticleDAO.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAADwvzcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T08:16:29.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "INewsArticleRepository.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\INewsArticleRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\INewsArticleRepository.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\INewsArticleRepository.cs",
+              "RelativeToolTip": "Repositories\\INewsArticleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T08:18:30.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SystemAccountDAO.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\SystemAccountDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\SystemAccountDAO.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\SystemAccountDAO.cs",
+              "RelativeToolTip": "DAO\\SystemAccountDAO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwB4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T10:15:10.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "NewsArticleServices.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\NewsArticleServices.cs",
+              "RelativeDocumentMoniker": "Services\\NewsArticleServices.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Services\\NewsArticleServices.cs",
+              "RelativeToolTip": "Services\\NewsArticleServices.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA0wCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T08:19:35.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "INewsArticleServices.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\INewsArticleServices.cs",
+              "RelativeDocumentMoniker": "Services\\INewsArticleServices.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Services\\INewsArticleServices.cs",
+              "RelativeToolTip": "Services\\INewsArticleServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T08:19:23.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ICategoryServices.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\ICategoryServices.cs",
+              "RelativeDocumentMoniker": "Services\\ICategoryServices.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Services\\ICategoryServices.cs",
+              "RelativeToolTip": "Services\\ICategoryServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:42:18.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "NewsArticleRepository.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\NewsArticleRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\NewsArticleRepository.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\NewsArticleRepository.cs",
+              "RelativeToolTip": "Repositories\\NewsArticleRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T08:18:44.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "INewsArticleDAO.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\INewsArticleDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\INewsArticleDAO.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\INewsArticleDAO.cs",
+              "RelativeToolTip": "DAO\\INewsArticleDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T03:25:03.473Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 42,
+              "Title": "SystemAccount.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Models\\SystemAccount.cs",
+              "RelativeDocumentMoniker": "Models\\SystemAccount.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Models\\SystemAccount.cs",
+              "RelativeToolTip": "Models\\SystemAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T03:01:46.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20250226020926_UpdateModel1.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226020926_UpdateModel1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250226020926_UpdateModel1.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226020926_UpdateModel1.cs",
+              "RelativeToolTip": "Migrations\\20250226020926_UpdateModel1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T02:09:27.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\SystemAccounts\\Create.cshtml",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\SystemAccounts\\Create.cshtml",
+              "RelativeToolTip": "Views\\SystemAccounts\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-24T09:17:20.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "FunewsManagementContext.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Data\\FunewsManagementContext.cs",
+              "RelativeDocumentMoniker": "Data\\FunewsManagementContext.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Data\\FunewsManagementContext.cs",
+              "RelativeToolTip": "Data\\FunewsManagementContext.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAwHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T02:17:34.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "NewsArticle.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Models\\NewsArticle.cs",
+              "RelativeDocumentMoniker": "Models\\NewsArticle.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Models\\NewsArticle.cs",
+              "RelativeToolTip": "Models\\NewsArticle.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T08:23:20.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "FunewsManagementContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\FunewsManagementContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\FunewsManagementContextModelSnapshot.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\FunewsManagementContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\FunewsManagementContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T03:07:46.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20250226021112_UpdateModel.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021112_UpdateModel.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250226021112_UpdateModel.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021112_UpdateModel.cs",
+              "RelativeToolTip": "Migrations\\20250226021112_UpdateModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T02:11:13.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20250226021210_UpdateAccount.cs",
+              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021210_UpdateAccount.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250226021210_UpdateAccount.cs",
+              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Migrations\\20250226021210_UpdateAccount.cs",
+              "RelativeToolTip": "Migrations\\20250226021210_UpdateAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T02:12:10.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "TagRepository.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\TagRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\TagRepository.cs",
@@ -849,12 +934,11 @@
               "RelativeToolTip": "Repositories\\TagRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:28:34.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T14:28:34.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "ITagRepository.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\ITagRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ITagRepository.cs",
@@ -862,12 +946,11 @@
               "RelativeToolTip": "Repositories\\ITagRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T01:47:54.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T01:47:54.461Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "CategoryDAO.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\CategoryDAO.cs",
               "RelativeDocumentMoniker": "DAO\\CategoryDAO.cs",
@@ -879,7 +962,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "ISystemAccountDAO.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\ISystemAccountDAO.cs",
               "RelativeDocumentMoniker": "DAO\\ISystemAccountDAO.cs",
@@ -891,7 +974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "SystemAccountRepository.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\SystemAccountRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\SystemAccountRepository.cs",
@@ -899,24 +982,11 @@
               "RelativeToolTip": "Repositories\\SystemAccountRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T18:05:42.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T18:05:42.167Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "History.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\History.cshtml",
-              "RelativeDocumentMoniker": "Views\\Staff\\History.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Staff\\History.cshtml",
-              "RelativeToolTip": "Views\\Staff\\History.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T17:48:37.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "SystemAccountServices.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\SystemAccountServices.cs",
               "RelativeDocumentMoniker": "Services\\SystemAccountServices.cs",
@@ -928,19 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\NewsArticle\\Create.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\NewsArticle\\Create.cshtml",
-              "RelativeToolTip": "Views\\NewsArticle\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T08:14:23.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "RegisterVM.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\ViewModels\\RegisterVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\RegisterVM.cs",
@@ -952,19 +1010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "TagsController.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\TagsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TagsController.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\TagsController.cs",
-              "RelativeToolTip": "Controllers\\TagsController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAmwGIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T17:36:15.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "NewsArticleVM.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\ViewModels\\NewsArticleVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\NewsArticleVM.cs",
@@ -976,7 +1022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "PaginatedList.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Models\\PaginatedList.cs",
               "RelativeDocumentMoniker": "Models\\PaginatedList.cs",
@@ -988,19 +1034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T14:44:08.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\CategoryRepository.cs",
@@ -1012,7 +1046,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -1024,19 +1058,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "Services\\EmailService.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Services\\EmailService.cs",
-              "RelativeToolTip": "Services\\EmailService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T13:41:49.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "CategoryServices.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\CategoryServices.cs",
               "RelativeDocumentMoniker": "Services\\CategoryServices.cs",
@@ -1048,7 +1070,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "ICategoryDAO.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\ICategoryDAO.cs",
               "RelativeDocumentMoniker": "DAO\\ICategoryDAO.cs",
@@ -1060,7 +1082,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "LoginVM.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\ViewModels\\LoginVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginVM.cs",
@@ -1072,7 +1094,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "ITagServices.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Services\\ITagServices.cs",
               "RelativeDocumentMoniker": "Services\\ITagServices.cs",
@@ -1084,7 +1106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Repositories\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ICategoryRepository.cs",
@@ -1096,7 +1118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "TagDAO.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\TagDAO.cs",
               "RelativeDocumentMoniker": "DAO\\TagDAO.cs",
@@ -1108,7 +1130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "ITagDAO.cs",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\DAO\\ITagDAO.cs",
               "RelativeDocumentMoniker": "DAO\\ITagDAO.cs",
@@ -1120,19 +1142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T08:35:11.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -1144,19 +1154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
-              "ToolTip": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "Views\\Home\\Login.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-24T02:16:58.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Home\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Register.cshtml",
@@ -1168,7 +1166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 70,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -1180,7 +1178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -1192,7 +1190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 72,
               "Title": "LoginVM.cs",
               "DocumentMoniker": "D:\\Intern .net\\ASP .NET MVC\\ChamCong\\ViewModels\\LoginVM.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Intern .net\\ASP .NET MVC\\ChamCong\\ViewModels\\LoginVM.cs",
@@ -1204,7 +1202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 71,
               "Title": "Error.cshtml",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
@@ -1216,7 +1214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 69,
               "Title": "RegisterVM.cs",
               "DocumentMoniker": "D:\\Intern .net\\ASP .NET MVC\\ChamCong\\ViewModels\\RegisterVM.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Intern .net\\ASP .NET MVC\\ChamCong\\ViewModels\\RegisterVM.cs",
@@ -1228,7 +1226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\Semester 6\\Assignment\\ASS1\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",

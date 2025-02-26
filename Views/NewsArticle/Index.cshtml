@@ -5,8 +5,9 @@
     <p>
         <a asp-action="Create" class="btn btn-primary" class="mb-4">Create New</a>
     </p>
-
-    <!-- Search Form -->
+    <a asp-action="Index" asp-controller="Staff" class="btn btn-sm btn-danger">
+        Back
+    </a>
     <form asp-action="Index" method="get" class="mb-4">
         <div class="row g-2">
             <div class="col-md-8">
@@ -38,7 +39,6 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <!-- Giới hạn độ dài title và headline -->
                         <td class="text-truncate" style="max-width: 200px;" title="@item.NewsTitle">@item.NewsTitle</td>
                         <td class="text-truncate" style="max-width: 300px;" title="@item.Headline">@item.Headline</td>
                         <td class="text-center">@item.CreatedDate?.ToString("yyyy-MM-dd")</td>
@@ -47,7 +47,7 @@
                                 @(item.NewsStatus.HasValue ? (item.NewsStatus.Value ? "Active" : "Inactive") : "Unknown")
                             </span>
                         </td>
-                        <!-- Đảm bảo nút không xuống dòng -->
+
                         <td class="text-center" style="white-space: nowrap;">
                             <a asp-action="Edit" asp-route-id="@item.NewsArticleId" class="btn btn-warning btn-sm">✏️ Edit</a>
                             <a asp-action="Details" asp-route-id="@item.NewsArticleId" class="btn btn-info btn-sm">ℹ️ Details</a>
@@ -63,7 +63,6 @@
         </table>
     </div>
 
-    <!-- Phân trang Bootstrap -->
     <div class="d-flex justify-content-center mt-4">
         <nav>
             <ul class="pagination">

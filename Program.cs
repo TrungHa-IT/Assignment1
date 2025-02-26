@@ -13,13 +13,14 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<FunewsManagementContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("HotelDb")));
 
-// Cấu hình xác thực bằng Cookie
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/Account/Login"; // Trang đăng nhập
-        options.AccessDeniedPath = "/Account/AccessDenied"; // Trang từ chối quyền
+        options.LoginPath = "/Account/Login"; // Đường dẫn khi chưa đăng nhập
+        options.AccessDeniedPath = "/Account/AccessDenied"; // Khi không có quyền
     });
+
+builder.Services.AddAuthorization();
 
 
 // Register DAO first
@@ -66,7 +67,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication(); 
+app.UseAuthorization(); 
+
+
 
 app.MapControllerRoute(
     name: "default",

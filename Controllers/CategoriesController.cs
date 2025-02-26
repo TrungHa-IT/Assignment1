@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASS1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASS1.Controllers
 {
@@ -17,20 +18,25 @@ namespace ASS1.Controllers
         {
             _context = context;
         }
-
+        [Authorize(Roles = "Staff")]
         // GET: Categories
         public async Task<IActionResult> Index()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Unauthorized(); // Báo lỗi 401 nếu chưa đăng nhập
+            }
+
             var funewsManagementContext = _context.Categories.Include(c => c.ParentCategory);
             return View(await funewsManagementContext.ToListAsync());
         }
-
+        [Authorize(Roles = "Staff")]
         public async Task<IActionResult> Lecturer()
         {
             var funewsManagementContext = _context.Categories.Include(c => c.ParentCategory);
             return View(await funewsManagementContext.ToListAsync());
         }
-
+        [Authorize(Roles = "Staff")]
         // GET: Categories/Details/5
         public async Task<IActionResult> Details(short? id)
         {
@@ -49,14 +55,15 @@ namespace ASS1.Controllers
 
             return View(category);
         }
-
+        [Authorize(Roles = "Staff")]
         // GET: Categories/Create
         public IActionResult Create()
         {
-            ViewData["ParentCategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId");
+            ViewData["ParentCategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName");
             return View();
         }
 
+        [Authorize(Roles = "Staff")]
         // POST: Categories/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -66,6 +73,7 @@ namespace ASS1.Controllers
         {
             if (ModelState.IsValid)
             {
+                category.IsActive = true;
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -73,7 +81,7 @@ namespace ASS1.Controllers
             ViewData["ParentCategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", category.ParentCategoryId);
             return View(category);
         }
-
+       
         // GET: Categories/Edit/5
         public async Task<IActionResult> Edit(short? id)
         {

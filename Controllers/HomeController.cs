@@ -40,59 +40,45 @@ public class HomeController : Controller
             return View(loginVM);
         }
 
-        // Tìm người dùng theo email
         var user = await _funewsManagementContext.SystemAccounts
             .FirstOrDefaultAsync(u => u.AccountEmail == loginVM.AccountEmail);
 
-        // Kiểm tra tài khoản và mật khẩu
         if (user == null || user.AccountPassword != loginVM.AccountPassword)
         {
             ModelState.AddModelError("", "Email hoặc mật khẩu không đúng.");
             return View(loginVM);
         }
 
-        // Chuyển AccountRole từ số sang tên vai trò (ví dụ: 1 -> "Staff", 2 -> "Lecturer", 3 -> "Admin")
         string userRole = user.AccountRole switch
         {
             1 => "Staff",
             2 => "Lecturer",
             3 => "Admin",
-            _ => "User" // Nếu không có role nào phù hợp
+            _ => "User"
         };
 
-        // Tạo danh sách claims từ thông tin tài khoản
         var claims = new List<Claim>
     {
         new Claim(ClaimTypes.Name, user.AccountName ?? ""),
         new Claim(ClaimTypes.Email, user.AccountEmail ?? ""),
-        new Claim(ClaimTypes.Role, userRole), // Lưu role dưới dạng chuỗi (Staff, Lecturer, Admin)
+        new Claim(ClaimTypes.Role, userRole),
         new Claim("AccountId", user.AccountId.ToString())
     };
 
-        // Tạo danh tính claims
         var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
         var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
 
-        // Đăng nhập với cookie
         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal);
 
-        // Điều hướng người dùng dựa trên claim role
-        if (User.IsInRole("Lecturer"))
+        return userRole switch
         {
-            return RedirectToAction("Lecturer", "NewsArticle");
-        }
-        if (User.IsInRole("Staff"))
-        {
-            return RedirectToAction("Index", "Staff");
-        }
-        if (User.IsInRole("Admin"))
-        {
-            return RedirectToAction("Index", "Admin");
-        }
-
-        // Trường hợp mặc định
-        return RedirectToAction("Login", "Home");
+            "Lecturer" => RedirectToAction("Lecturer", "NewsArticle"),
+            "Staff" => RedirectToAction("Index", "Staff"),
+            "Admin" => RedirectToAction("Index", "Admin"),
+            _ => RedirectToAction("Login", "Home")
+        };
     }
+
 
 
     public IActionResult Register()

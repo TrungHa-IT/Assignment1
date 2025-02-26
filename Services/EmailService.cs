@@ -20,7 +20,7 @@
             var emailSettings = _configuration.GetSection("EmailSettings");
 
             var message = new MimeMessage();
-            message.From.Add(new MailboxAddress("Admin", emailSettings["SenderEmail"]));
+            message.From.Add(new MailboxAddress("AssignmentPRN222", emailSettings["SenderEmail"]));
             message.To.Add(new MailboxAddress("", toEmail));
             message.Subject = subject;
 

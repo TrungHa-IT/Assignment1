@@ -1,5 +1,6 @@
 ﻿using ASS1.Services;
 using ASS1.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ASS1.Controllers
@@ -11,15 +12,17 @@ namespace ASS1.Controllers
         {
             _newsArticleServices = newsArticleServices;
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Index()
         {
             return View();
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Dashboard()
         {
             return View();
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async  Task<IActionResult> Dashboard(DateTime startDate, DateTime endDate)
         {

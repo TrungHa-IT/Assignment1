@@ -5,7 +5,7 @@
 namespace ASS1.Migrations
 {
     /// <inheritdoc />
-    public partial class FixBug : Migration
+    public partial class UpdateModel : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

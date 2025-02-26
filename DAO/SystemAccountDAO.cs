@@ -33,9 +33,10 @@ namespace ASS1.DAO
             throw new NotImplementedException();
         }
 
-        public Task<SystemAccount?> GetAccountById(short accountId)
+        public async Task<SystemAccount?> GetAccountById(short accountId)
         {
-            throw new NotImplementedException();
+            var account = await _context.SystemAccounts.FindAsync(accountId);
+            return account;
         }
 
         public Task<IEnumerable<SystemAccount>> GetAllSystemAccounts()

@@ -64,11 +64,51 @@ namespace ASS1.Controllers
 
         }
 
-        public async Task<IActionResult> Lecturer()
+        public async Task<IActionResult> Lecturer(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-            var articles = await _newsArticleServices.GetAllNewsStatus();
-            return View(articles);
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["NameSortParm"] = string.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                pageNumber = 1;  // Reset về trang đầu tiên nếu có tìm kiếm mới
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString; // Lưu trạng thái tìm kiếm khi chuyển trang
+
+            var articles = (await _newsArticleServices.GetAllNewsStatus()).AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                articles = articles.Where(s => s.NewsTitle.Contains(searchString) || s.NewsContent.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "Date":
+                    articles = articles.OrderBy(s => s.CreatedDate);
+                    break;
+                case "date_desc":
+                    articles = articles.OrderByDescending(s => s.CreatedDate);
+                    break;
+                case "status":
+                    articles = articles.OrderByDescending(s => s.ModifiedDate);
+                    break;
+                default:
+                    articles = articles.OrderByDescending(s => s.CreatedDate); // Sắp xếp mặc định
+                    break;
+            }
+
+            int pageSize = 9;
+            return View(await PaginatedList<NewsArticle>.CreateAsync(articles, pageNumber ?? 1, pageSize));
         }
+
+
         public async Task<IActionResult> LecturerDetails(string id)
         {
             var category = await _newsArticleServices.GetNewsById(id);

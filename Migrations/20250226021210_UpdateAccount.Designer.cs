@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASS1.Migrations
 {
     [DbContext(typeof(FunewsManagementContext))]
-    [Migration("20250224031256_Fix-Bug")]
-    partial class FixBug
+    [Migration("20250226021210_UpdateAccount")]
+    partial class UpdateAccount
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -134,6 +134,9 @@ namespace ASS1.Migrations
                         .HasColumnType("nvarchar(70)");
 
                     b.Property<int?>("AccountRole")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("AccountStatus")
                         .HasColumnType("int");
 
                     b.HasKey("AccountId");

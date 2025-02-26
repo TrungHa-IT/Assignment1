@@ -5,7 +5,7 @@
 namespace ASS1.Migrations
 {
     /// <inheritdoc />
-    public partial class afasf : Migration
+    public partial class UpdateAccount : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

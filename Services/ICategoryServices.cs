@@ -9,5 +9,6 @@ namespace ASS1.Services
         Task AddCategory(Category category);
         Task UpdateCategory(Category category);
         Task DeleteCategory(short categoryId);
+
     }
 }

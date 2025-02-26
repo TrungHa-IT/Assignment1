@@ -1,68 +1,92 @@
 ﻿@model PaginatedList<ASS1.Models.NewsArticle>
 
+<div class="container mt-4">
+    <h2 class="text-center text-primary mb-4">📰 News Articles</h2>
+    <p>
+        <a asp-action="Create" class="btn btn-primary" class="mb-4">Create New</a>
+    </p>
 
-<h2>News Articles</h2>
-<p>
-    <a asp-action="Create" class="btn btn-primary">Create New</a>
-</p>
+    <!-- Search Form -->
+    <form asp-action="Index" method="get" class="mb-4">
+        <div class="row g-2">
+            <div class="col-md-8">
+                <div class="input-group">
+                    <input type="text" name="SearchString" class="form-control"
+                           placeholder="🔍 Search by title..." value="@ViewData["CurrentFilter"]" />
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <a asp-action="Index" class="btn btn-secondary">Reset</a>
+            </div>
+        </div>
+    </form>
 
-<form asp-action="Index" method="get">
-    <div class="form-actions no-color">
-        <p>
-            <label>Find by Title: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" /></label>
-            <input type="submit" value="Search" class="btn btn-default" /> |
-            <a asp-action="Index">Back to Full List</a>
-        </p>
+    <!-- News Table -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle">
+            <thead class="table-dark">
+                <tr class="text-center">
+                    <th style="width: 25%;">Title</th>
+                    <th style="width: 35%;">Headline</th>
+                    <th style="width: 15%;">Created Date</th>
+                    <th style="width: 10%;">Status</th>
+                    <th style="width: 15%;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <!-- Giới hạn độ dài title và headline -->
+                        <td class="text-truncate" style="max-width: 200px;" title="@item.NewsTitle">@item.NewsTitle</td>
+                        <td class="text-truncate" style="max-width: 300px;" title="@item.Headline">@item.Headline</td>
+                        <td class="text-center">@item.CreatedDate?.ToString("yyyy-MM-dd")</td>
+                        <td class="text-center">
+                            <span class="badge @(item.NewsStatus == true ? "bg-success" : "bg-danger")">
+                                @(item.NewsStatus.HasValue ? (item.NewsStatus.Value ? "Active" : "Inactive") : "Unknown")
+                            </span>
+                        </td>
+                        <!-- Đảm bảo nút không xuống dòng -->
+                        <td class="text-center" style="white-space: nowrap;">
+                            <a asp-action="Edit" asp-route-id="@item.NewsArticleId" class="btn btn-warning btn-sm">✏️ Edit</a>
+                            <a asp-action="Details" asp-route-id="@item.NewsArticleId" class="btn btn-info btn-sm">ℹ️ Details</a>
+                            <a asp-action="Delete" asp-route-id="@item.NewsArticleId"
+                               class="btn btn-danger btn-sm"
+                               onclick="return confirm('Are you sure you want to delete this article?');">
+                                🗑️ Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
-</form>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Headline</th>
-            <th>Created Date</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.NewsTitle</td>
-                <td>@item.Headline</td>
-                <td>@item.CreatedDate?.ToString("yyyy-MM-dd")</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.NewsArticleId" class="btn btn-warning">Edit</a>
-                    <a asp-action="Details" asp-route-id="@item.NewsArticleId" class="btn btn-info">Details</a>
-                    <a asp-action="Delete" asp-route-id="@item.NewsArticleId"
-                       class="btn btn-danger"
-                       onclick="return confirm('Are you sure you want to delete this article?');">
-                        Delete
+    <!-- Phân trang Bootstrap -->
+    <div class="d-flex justify-content-center mt-4">
+        <nav>
+            <ul class="pagination">
+                <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                    <a class="page-link" asp-action="Index"
+                       asp-controller="NewsArticle"
+                       asp-route-sortOrder="@ViewData["CurrentSort"]"
+                       asp-route-pageNumber="@(Model.PageIndex - 1)"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]">
+                        Previous
                     </a>
+                </li>
+                <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                    <a class="page-link" asp-action="Index"
+                       asp-controller="NewsArticle"
+                       asp-route-sortOrder="@ViewData["CurrentSort"]"
+                       asp-route-pageNumber="@(Model.PageIndex + 1)"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]">
+                        Next
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-
-@{
-    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
-    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
-}
-
-<a asp-action="Index"
-   asp-route-sortOrder="@ViewData["CurrentSort"]"
-   asp-route-pageNumber="@(Model.PageIndex - 1)"
-   asp-route-currentFilter="@ViewData["CurrentFilter"]"
-   class="btn btn-default @prevDisabled">
-    Previous
-</a>
-<a asp-action="Index"
-   asp-route-sortOrder="@ViewData["CurrentSort"]"
-   asp-route-pageNumber="@(Model.PageIndex + 1)"
-   asp-route-currentFilter="@ViewData["CurrentFilter"]"
-   class="btn btn-default @nextDisabled">
-    Next
-</a>
+</div>

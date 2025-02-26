@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ASS1.Models;
 
 public partial class NewsArticle
 {
-    [Key] // Ensure this annotation exists
-    
     public string NewsArticleId { get; set; } = null!;
 
     public string? NewsTitle { get; set; }
@@ -20,7 +16,7 @@ public partial class NewsArticle
     public string? NewsContent { get; set; }
 
     public string? NewsSource { get; set; }
-    
+
     public short? CategoryId { get; set; }
 
     public bool? NewsStatus { get; set; }
@@ -30,7 +26,7 @@ public partial class NewsArticle
     public short? UpdatedById { get; set; }
 
     public DateTime? ModifiedDate { get; set; }
-    
+
     public virtual Category? Category { get; set; }
 
     public virtual SystemAccount? CreatedBy { get; set; }

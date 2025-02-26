@@ -1,56 +1,68 @@
 ﻿@model IEnumerable<ASS1.Models.SystemAccount>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "User Management";
 }
 
-<h1>Index</h1>
+<h1 class="mb-3">User Management</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
 </p>
-<table class="table">
-    <thead>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.AccountName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AccountEmail)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AccountRole)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AccountPassword)
-            </th>
-            <th></th>
+            <th>@Html.DisplayNameFor(model => model.AccountName)</th>
+            <th>@Html.DisplayNameFor(model => model.AccountEmail)</th>
+            <th>Role</th> <!-- Hiển thị Role rõ ràng -->
+            <th>@Html.DisplayNameFor(model => model.IsActive)</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.AccountName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AccountEmail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AccountRole)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AccountPassword)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.AccountId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.AccountId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.AccountId">Delete</a>
-            </td>
-        </tr>
-}
-        <a asp-action="Index" asp-controller="Admin">Back</a>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.AccountName)</td>
+                <td>@Html.DisplayFor(modelItem => item.AccountEmail)</td>
+                <td>
+                    @{
+                        string roleText = item.AccountRole switch
+                        {
+                            1 => "Staff",
+                            2 => "Lecturer",
+                            3 => "Admin",
+                            _ => "Unknown"
+                        };
+                    }
+                    <span class="badge bg-info">@roleText</span>
+                </td>
+                <td>
+                    <span class="badge @(item.IsActive ? "bg-success" : "bg-danger")">
+                        @(item.IsActive ? "Active" : "Inactive")
+                    </span>
+                </td>
+                <td>
+                    @*  <a asp-action="Edit" asp-route-id="@item.AccountId" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.AccountId" class="btn btn-info btn-sm">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.AccountId" class="btn btn-danger btn-sm">Delete</a> *@
+                    @if (item.IsActive)
+                    {
+                        <a asp-action="ChangeStatus" asp-controller="SystemAccounts" asp-route-id="@item.AccountId" class="btn btn-outline-danger btn-sm">
+                            Deactivate
+                        </a>
+                    }
+                    else
+                    {
+                        <a asp-action="ChangeStatus" asp-controller="SystemAccounts" asp-route-id="@item.AccountId" class="btn btn-outline-success btn-sm">
+                            Activate
+                        </a>
+                    }
+                </td>
+            </tr>
+        }
     </tbody>
-
-    
 </table>
+
+<a asp-action="Index" asp-controller="Admin" class="btn btn-secondary">Back</a>

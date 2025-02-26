@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ASS1.Models.NewsArticle>
+
+@{
+    ViewBag.Title = "Article History";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h3 class="text-center mb-4">Article History</h3>
+
+            <table class="table table-bordered shadow-sm">
+                <thead class="table-dark text-white">
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Headline</th>
+                        <th>Created Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Any())
+                    {
+                        int index = 1;
+                        foreach (var article in Model)
+                        {
+                            <tr>
+                                <td>@index</td>
+                                <td>@article.NewsTitle</td>
+                                <td>@article.Headline</td>
+                                <td>@article.CreatedDate?.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    @if (article.NewsStatus == true)
+                                    {
+                                        <span class="badge bg-success">Published</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-warning">Draft</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a href="@Url.Action("Details", "NewsArticle", new { id = article.NewsArticleId })" class="btn btn-sm btn-primary">View</a>
+                                </td>
+                            </tr>
+                            index++;
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center text-muted">No articles found</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    table {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+</style>

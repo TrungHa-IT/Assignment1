@@ -133,6 +133,9 @@ namespace ASS1.Migrations
                     b.Property<int?>("AccountRole")
                         .HasColumnType("int");
 
+                    b.Property<int?>("AccountStatus")
+                        .HasColumnType("int");
+
                     b.HasKey("AccountId");
 
                     b.ToTable("SystemAccount", (string)null);

@@ -24,6 +24,26 @@ namespace ASS1.Controllers
             return View(await _context.SystemAccounts.ToListAsync());
         }
 
+        [HttpGet]
+        [Route("SystemAccounts/ChangeStatus/{accountID}")]
+        public async Task<IActionResult> ChangeStatus(short accountID)
+        {
+            var systemAccount = await _context.SystemAccounts.FindAsync(accountID);
+
+            if (systemAccount == null)
+            {
+                return NotFound();
+            }
+
+            systemAccount.IsActive = !systemAccount.IsActive;
+            _context.Update(systemAccount);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
+
         // GET: SystemAccounts/Details/5
         public async Task<IActionResult> Details(short? id)
         {
@@ -85,7 +105,7 @@ namespace ASS1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(short id, [Bind("AccountId,AccountName,AccountEmail,AccountRole,AccountPassword")] SystemAccount systemAccount)
+        public async Task<IActionResult> Edit(short id, [Bind("AccountId,AccountName,AccountEmail,AccountPassword")] SystemAccount systemAccount)
         {
             if (id != systemAccount.AccountId)
             {
@@ -110,10 +130,12 @@ namespace ASS1.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                // Chuyển hướng đến action "Profile" của controller "Staff" sau khi cập nhật thành công
+                return RedirectToAction("Profile", "Staff", new { id = systemAccount.AccountId });
             }
             return View(systemAccount);
         }
+
 
         // GET: SystemAccounts/Delete/5
         public async Task<IActionResult> Delete(short? id)

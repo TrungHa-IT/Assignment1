@@ -48,11 +48,10 @@ namespace ASS1.DAO
             }
         }
 
-        public async Task<IEnumerable<NewsArticle>> GetAllNewsStatus()
+        public async Task<IQueryable<NewsArticle>> GetAllNewsStatus()
         {
-            return await _context.NewsArticles
-                     .Where(n => n.NewsStatus == true)
-                     .ToListAsync();
+            return  _context.NewsArticles
+                     .Where(n => n.NewsStatus == true);
         }
 
         public async Task<IEnumerable<NewsArticle>> GetNewsByDateRange(DateTime startDate, DateTime endDate)
@@ -61,6 +60,14 @@ namespace ASS1.DAO
             .Where(n => n.CreatedDate >= startDate && n.CreatedDate <= endDate)
             .OrderByDescending(n => n.CreatedDate)
             .ToListAsync();
+        }
+
+        public async Task<IEnumerable<NewsArticle?>> GetNewsByAccountID(short accountID)
+        {
+            return await _context.NewsArticles
+                .Where(n => n.CreatedById == accountID)
+                .OrderByDescending(n => n.CreatedDate)
+                .ToListAsync(); // Sửa lỗi
         }
     }
 }

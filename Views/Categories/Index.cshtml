@@ -1,53 +1,90 @@
 ﻿@model IEnumerable<ASS1.Models.Category>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Categories";
 }
 
-<h1>Index</h1>
+<div class="container my-4">
+    <h2 class="text-center text-primary mb-4">📂 Category List</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.CategoryName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CategoryDesciption)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsActive)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ParentCategory)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoryName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoryDesciption)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsActive)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ParentCategory.CategoryId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CategoryId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CategoryId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CategoryId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <!-- Success & Error Messages -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <!-- Add Category Button -->
+    <div class="d-flex justify-content-end mb-3">
+        <a asp-action="Create" class="btn btn-success">
+            ➕ Create New Category
+        </a>
+    </div>
+
+    <!-- Category Table -->
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>📌 Name</th>
+                    <th>📝 Description</th>
+                    <th>✅ Active</th>
+                    <th>📁 Parent Category</th>
+                    <th>⚙️ Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="5" class="text-muted text-center">
+                            ❌ No categories found.
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.CategoryName</td>
+                            <td>@item.CategoryDesciption</td>
+                            <td>
+                                @if (item.IsActive == true)
+                                {
+                                    <span class="badge bg-success">Active</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">Inactive</span>
+                                }
+                            </td>
+                            <td>
+                                @(item.ParentCategory != null ? item.ParentCategory.CategoryName : "None")
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.CategoryId" class="btn btn-sm btn-warning">
+                                    ✏️ Edit
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.CategoryId" class="btn btn-sm btn-info">
+                                    🔍 Details
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.CategoryId" class="btn btn-sm btn-danger"
+                                   onclick="return confirm('Are you sure you want to delete this category?');">
+                                    🗑️ Delete
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

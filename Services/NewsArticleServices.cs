@@ -42,9 +42,9 @@ public class NewsArticleServices : INewsArticleServices
         await _newsArticleRepository.AddNewsArticleWithTagsAsync(article, tagIds);
     }
 
-    public async Task<IEnumerable<NewsArticle>> GetAllNewsStatus()
+    public Task<IQueryable<NewsArticle>> GetAllNewsStatus()
     {
-        return await _newsArticleRepository.GetAllNewsStatus();
+        return _newsArticleRepository.GetAllNewsStatus();
     }
 
     public async Task<IEnumerable<NewsArticle>> GetNewsByDateRange(DateTime startDate, DateTime endDate)
@@ -55,5 +55,10 @@ public class NewsArticleServices : INewsArticleServices
     public async Task UpdateNewsArticleWithTagsAsync(NewsArticle article, List<int> tagIds)
     {
         await _newsArticleRepository.UpdateNewsArticleWithTagsAsync(article, tagIds);
+    }
+
+    public async Task<IEnumerable<NewsArticle?>> GetNewsByAccountID(short accountID)
+    {
+         return await _newsArticleRepository.GetNewsByAccountID(accountID);
     }
 }

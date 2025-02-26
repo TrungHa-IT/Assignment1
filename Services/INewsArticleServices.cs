@@ -6,7 +6,7 @@ namespace ASS1.Services
     public interface INewsArticleServices
     {
         Task<IQueryable<NewsArticle>> GetAllNews();
-        Task<IEnumerable<NewsArticle>> GetAllNewsStatus();
+        Task<IQueryable<NewsArticle>> GetAllNewsStatus();
         Task<NewsArticle?> GetNewsById(string newsArticleId);
         Task AddNews(NewsArticle newsArticle);
         Task UpdateNews(NewsArticle newsArticle);
@@ -14,5 +14,6 @@ namespace ASS1.Services
         Task AddNewsArticleWithTagsAsync(NewsArticle article, List<int> tagIds);
         Task<IEnumerable<NewsArticle>> GetNewsByDateRange(DateTime startDate, DateTime endDate);
         Task UpdateNewsArticleWithTagsAsync(NewsArticle article, List<int> tagIds);
+        Task<IEnumerable<NewsArticle?>> GetNewsByAccountID(short accountID);
     }
 }

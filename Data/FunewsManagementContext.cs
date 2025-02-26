@@ -24,7 +24,8 @@ public partial class FunewsManagementContext : DbContext
     public virtual DbSet<Tag> Tags { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Name=ConnectionStrings:HotelDb");
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=(local);Database=FUNewsManagement;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -98,11 +99,12 @@ public partial class FunewsManagementContext : DbContext
             entity.ToTable("SystemAccount");
 
             entity.Property(e => e.AccountId)
-                .ValueGeneratedOnAdd()
+                .ValueGeneratedNever()
                 .HasColumnName("AccountID");
             entity.Property(e => e.AccountEmail).HasMaxLength(70);
             entity.Property(e => e.AccountName).HasMaxLength(100);
             entity.Property(e => e.AccountPassword).HasMaxLength(70);
+            entity.Property(e => e.IsActive).HasDefaultValue(true);
         });
 
         modelBuilder.Entity<Tag>(entity =>

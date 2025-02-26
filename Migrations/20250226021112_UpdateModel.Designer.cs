@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASS1.Migrations
 {
     [DbContext(typeof(FunewsManagementContext))]
-    [Migration("20250224030530_UpdateModel")]
+    [Migration("20250226021112_UpdateModel")]
     partial class UpdateModel
     {
         /// <inheritdoc />
@@ -134,6 +134,9 @@ namespace ASS1.Migrations
                         .HasColumnType("nvarchar(70)");
 
                     b.Property<int?>("AccountRole")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("AccountStatus")
                         .HasColumnType("int");
 
                     b.HasKey("AccountId");

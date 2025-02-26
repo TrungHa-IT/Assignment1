@@ -55,9 +55,14 @@ namespace ASS1.Repositories
             return await _newsArticleDAO.GetAllNews();
         }
 
-        public async Task<IEnumerable<NewsArticle>> GetAllNewsStatus()
+        public async Task<IQueryable<NewsArticle>> GetAllNewsStatus()
         {
             return await _newsArticleDAO.GetAllNewsStatus();
+        }
+
+        public async Task<IEnumerable<NewsArticle?>> GetNewsByAccountID(short accountID)
+        {
+            return await _newsArticleDAO.GetNewsByAccountID(accountID);
         }
 
         public async Task<IEnumerable<NewsArticle>> GetNewsByDateRange(DateTime startDate, DateTime endDate)

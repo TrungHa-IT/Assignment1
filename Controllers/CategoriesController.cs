@@ -146,20 +146,31 @@ namespace ASS1.Controllers
             return View(category);
         }
 
-        // POST: Categories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(short id)
         {
             var category = await _context.Categories.FindAsync(id);
-            if (category != null)
+            if (category == null)
             {
-                _context.Categories.Remove(category);
+                return NotFound();
             }
 
-            await _context.SaveChangesAsync();
+            try
+            {
+                _context.Categories.Remove(category);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Category deleted successfully!";
+            }
+            catch (DbUpdateException ex)
+            {
+                TempData["ErrorMessage"] = "Error: This category cannot be deleted because it is referenced by other records.";
+                return RedirectToAction(nameof(Delete), new { id });
+            }
+
             return RedirectToAction(nameof(Index));
         }
+
 
         private bool CategoryExists(short id)
         {
